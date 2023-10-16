@@ -58,8 +58,12 @@ def translation(letter):
         return ["z", "--.."]
     else:
         return [" ", "..--"]
-#if choice == 1:
-    #asfdasd
+if choice == 1:
+    word = word.replace("/", " ")
+    new_word = word.split()
+    for i in range(len(new_word)):
+        letter = new_word[i]
+        final_word += str(translation(letter)[0])
 if choice == 2:
     for i in range(len(word)):
         letter = word[i]
